@@ -1,0 +1,79 @@
+// variables
+$background-color: rgb(1, 1, 36); 
+$color: #777;
+@font-face {
+    font-family: 'ubuntuBold';
+    src: url(../fonts/Ubuntu-Bold.ttf);
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    background: rgba(0,0,0, .3);
+    padding: 3em;
+    border-radius: 20px;
+    font-family: 'ubuntuBold';
+
+    header{
+        h1{
+            font-size: 2rem;
+            color: $color;
+        }
+    }
+    
+    article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        input{
+            padding: 1em;
+            width: 30%;
+            border: none;
+            margin: 2em;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px black;
+        }
+    
+        #show{
+            font-size: 1rem;
+            color: $color;
+        }
+    
+        #btn{
+            padding: 1rem;
+            background: $color;
+            margin: 2em;
+            color: $background-color;
+            border-radius: 10px;
+            font-weight: bolder;
+            border: none;
+            box-shadow: 1px 1px 1px 1px black;
+        }
+        #show{
+            background-color: $color;
+            width: 10em;
+            height: 3em;
+            font-size: large;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $background-color; 
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px black;
+        }
+    }
+}
+
